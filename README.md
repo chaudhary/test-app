@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To import movies to database from csv file
+```
+rake import:movies
+```
 
-Things you may want to cover:
+To import reviews to database from csv file
+```
+rake import:reviews
+```
 
-* Ruby version
+To start the rails server
+```
+rails s
+```
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Go to localhost:3000/movies
