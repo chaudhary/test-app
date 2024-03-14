@@ -1,0 +1,49 @@
+<div id="<%= dom_id movie %>">
+  <p>
+    <strong>Name:</strong>
+    <%= movie.name %>
+  </p>
+
+  <p>
+    <strong>Description:</strong>
+    <%= movie.description %>
+  </p>
+
+  <p>
+    <strong>Year:</strong>
+    <%= movie.year %>
+  </p>
+
+  <p>
+    <strong>Filming Locations:</strong>
+    <ul>
+      <% movie.locations.each do |location| %>
+        <li>
+          <%= location.name %>, <%= location.country %>
+        </li>
+      <% end %>
+    </ul>
+  </p>
+
+  <p>
+    <strong>Actors:</strong>
+    <ul>
+      <% movie.actors.each do |actor| %>
+        <li>
+          <%= actor.name %>
+        </li>
+      <% end %>
+    </ul>
+  </p>
+
+  <p>
+    <strong>Rating:</strong>
+    <%= movie.avg_rating %>
+  </p>
+
+  <p>
+    <strong>Director:</strong>
+    <%= movie.director.name %>
+  </p>
+
+</div>
